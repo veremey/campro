@@ -279,7 +279,10 @@ $green: #2ec154
 		&_wrap
 			height: 60px
 			width: 840px
-			+vcenter
+			position: absolute
+			top: 50%
+			left: 50%
+			+translate(-50%,0%)
 			p
 				float: left
 				font-size: 18px
@@ -289,24 +292,177 @@ $green: #2ec154
 				+rl
 		&_search
 			float: left
+			position: relative
+			input
+				width: 190px
+				padding: 5px 45px 5px 15px
+				color: #707070
+				font-size: 14px
+				margin-top: 15px
+				margin-right: 10px
+				+rl
+			button
+				position: absolute
+				top: 20px
+				right: 20px
+				+s(letter)
+
+.footer__submit
+	width: 245px
+	height: 27px
+	text-align: center
+	padding: 5px 0
+	color: #FFF
+	margin-top: 15px
+	background-color: #707070
+	+rl
+.footer__center
+	background-color: #FFF
+	padding: 30px 0 20px
+	border-bottom: 1px solid #DFDFDF
+	+clr
+	&_left
+		float: left
+		width: 200px
+		height: 205px
+		+clr
+
+.footer__logo
+	+s(logo_f)
+	float: left
+	+hide-text
+.footer__button
+	position: relative
+	margin-top: 10px
+	float: left
+	width: 127px
+	height: 31px
+	color: #FFF
+	font-size: 13px
+	+border-radius(3px)
+	+g(#4b6aba, #3a58a0)
+	+rr
+	i
+		position: absolute
+		top: 4px
+		left: 4px
+		+s(f_blue)
+
+.footer__list
+	float: left
+	margin-right: 90px
+	&:last-child
+		margin-right: 0
+	li
+		line-height: 24px
+		color: $tc
+		+rl
+	h3
+		line-height: 28px
+		color: $tc
+		+rb
+	a,
+	.soc
+		display: inline-block
+		line-height: 24px
+		color: $tc
+		position: relative
+		+rl
+		&:hover
+			color: $green
+	.soc
+		margin-left: 23px
+	i
+		position: absolute
+		top: 5px
+	span
+		margin-bottom: 5px
+		+rr
+.vk
+	left: -25px
+	+s(vk)
+.ins
+	left: -22px
+	+s(inst)
+.f
+	left: -20px
+	+s(f)
 
 
+.footer__bottom
+	position: relative
+	padding: 20px 0 15px
+	+clr
 
+.copy
+	float: left
+	width: 122px
+	+clr
+.footer__nav
+	+vcenter
+	li
+		display: inline-block
+		text-align: center
+		margin-right: 20px
+		+rr
+	a
+		position: relative
+		display: block
+		color: $tc
+		font-size: 13px
+		margin-top: 35px
+		&:hover
+			color: $green
+		i
+			position: absolute
 
+.self
+	top: -23px
+	left: 23px
+	+s(shop)
+.courier
+	top: -28px
+	left: 20px
+	+s(courier)
+.post
+	top: -28px
+	left: 23px
+	+s(pr)
+.pick
+	top: -28px
+	left: 40px
+	+s(pickpoint)
 
+.fin
+	float: right
+	width: 318px
+	button
+		position: relative
+		width: 53px
+		height: 33px
+		background-color: $n
+		+border-radius(5px)
+		+box-shadow(0 1px 2px rgba(0,0,0,.17))
+		&:hover
+			+box-shadow(none)
 
+.q,
+.wb,
+.jd,
+.mc,
+.v
+	+vcenter
 
-
-
-
-
-
-
-
-
-
-
-
+.q
+	+s(q)
+.wb
+	+s(wb)
+.jd
+	+s(jd)
+.mc
+	+s(mc)
+.v
+	+s(v)
 
 
 
