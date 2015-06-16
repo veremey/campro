@@ -1,22 +1,206 @@
-// Normally mainpage styles
+.slider
+	position: relative
+	margin: 0 auto
+	float: left
+	width: 100%
+	height: 482px
+	.cycle-slideshow
+		overflow: hidden
+
+.big-slider
+	+clr
+	&__item
+		position: static
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 100
+		opacity: 1
+		visibility: hidden
+		display: block
+		height: 482px
+	&__img
+		position: absolute
+		width: 2000px
+		left: 50%
+		margin-left: -1000px
+		text-align: center
+		height: 482px
+		img
+			height: 100%
+			width: auto
+	&__content
+		color: #fff
+		padding: 60px 0 20px
+		text-align: center
+		h2
+			text-transform: uppercase
+			font-size: 64px
+			line-height: 65px
+			color: #FFF
+			+rb
+		p
+			font-size: 20px
+			+rl
+		.btn
+			width: 265px
+			height: 67px
+			font-size: 20px
+			color: $green
+			line-height: 60px
+			margin-left: -70px
+			margin-top: 24px
+			i
+				position: absolute
+				top: 15px
+				right: -50px
+				+s(down)
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				right: -73px
+				width: 69px
+				margin-top: -2px
+				height: 100%
+				border: 2px solid $green
+				background-color: $n
+.slider .nav
+	position: absolute
+	bottom: 15px
+	left: 50%
+	+translate(-50%,0%)
+	z-index: 999
+	button
+		width: 13px
+		height: 13px
+		border-radius: 50%
+		background-color: #878686
+		opacity: 0.8
+		margin-left: 5px
+		&:hover
+			+scale(1.1)
+	.is-active
+		width: 13px
+		height: 13px
+		background-color: #302f2f
+	+clr
+
+.btn
+	position: relative
+	background-color: $n
+	border: 2px solid $green
+	color: $green
+	text-transform: uppercase
+
+
+.line
+	background-color: #302f2f
+	+clr
+	&__list
+		+clr
+		li
+			text-align: center
+			display: inline-block
+			width: 33%
+			height: 83px
+		a
+			display: block
+			position: relative
+			+vertical
+			font-size: 15px
+			line-height: 15px
+			color: #FFF
+			margin-top: 30px
+			+rr
+			span
+				color: $green
+				+rb
+			i
+				position: absolute
+			.delivery1
+				top: -20px
+				left: -15px
+				+s(delivery1)
+			.shoes
+				top: -5px
+				left: -15px
+				+s(shoes)
+			.return
+				top: -12px
+				left: 35px
+				+s(return)
+
+.title
+	position: relative
+	width: 100%
+	white-space: nowrap
+	font-size: 25px
+	color: $tc
+	overflow: hidden
+	text-align: center
+	background-color: #FFF
+	margin: 20px 0 15px
+	&:before,
+	&:after
+		content: ""
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		width: 50%
+		height: 4px
+		top: -1px
+		border-bottom: 1px solid $green
+	&:after
+		right: -10px
+		margin-right: -50%
+	&:before
+		left: -10px
+		margin-left: -50%
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mark
+	width: 20%
+	display: inline-block
+	padding: 10px 0
+	+clr
+	img
+		display: block
+		padding-bottom: 30px
+		margin: 0 auto
+	&__name
+		font-size: 15px
+		color: $tc
+		text-transform: uppercase
+		text-align: center
+	&__price
+		font-size: 18px
+		text-align: center
+		+rr
+		span
+			font-size: 15px
+			+rl
+	.btn
+		display: block
+		width: 155px
+		height: 30px
+		font-size: 15px
+		text-align: left
+		padding-left: 20px
+		margin: 10px auto 10px
+		+rb
+		i
+			position: absolute
+			top: 5px
+			right: 25px
+			+s(basketin)
+		&:hover
+			background-color: $green
+			color: #FFF
+			i
+				+s(basketin_h)
 
 
 
