@@ -91,7 +91,7 @@ body { font-family: Roboto, Arial, sans-serif; font-size: 14px; line-height: 1.6
 .header__search a { color: #2ec154; font-size: 13px; border-bottom: 1px dotted #2ec154; float: right; margin-right: 2px; margin-top: 30px; }
 .header__search a:hover { border-bottom: 1px solid transparent; }
 
-.footer { height: 415px; *zoom: 1; }
+.footer { *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
 .footer__subscribe { background-color: #302F2F; height: 60px; }
 .footer__subscribe_wrap { height: 60px; width: 840px; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, 0%); -ms-transform: translate(-50%, 0%); -webkit-transform: translate(-50%, 0%); transform: translate(-50%, 0%); }
