@@ -1,3 +1,57 @@
 
 a
 	text-decoration: none
+
+.w_container
+	background-color: #FFF
+	+clr
+.g_container
+	background-color: #f7f4f4
+	+clr
+
+
+.title
+	position: relative
+	width: 100%
+	white-space: nowrap
+	font-size: 25px
+	color: $tc
+	overflow: hidden
+	text-align: center
+	background-color: $n
+	margin: 20px 0 15px
+	text-transform: uppercase
+	+rl
+	&:before,
+	&:after
+		content: ""
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		width: 50%
+		height: 4px
+		top: -1px
+		border-bottom: 1px solid $green
+	&:after
+		right: -10px
+		margin-right: -50%
+	&:before
+		left: -10px
+		margin-left: -50%
+
+.p20
+	padding: 20px 0
+
+
+.red
+	color: #ed1c24
+.inherit
+	color: inherit
+
+
+.btn
+	position: relative
+	background-color: $n
+	border: 2px solid $green
+	color: $green
+	text-transform: uppercase

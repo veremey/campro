@@ -87,12 +87,7 @@
 		background-color: #302f2f
 	+clr
 
-.btn
-	position: relative
-	background-color: $n
-	border: 2px solid $green
-	color: $green
-	text-transform: uppercase
+
 
 
 .line
@@ -132,44 +127,28 @@
 				left: 35px
 				+s(return)
 
-.title
-	position: relative
-	width: 100%
-	white-space: nowrap
-	font-size: 25px
-	color: $tc
-	overflow: hidden
-	text-align: center
-	background-color: #FFF
-	margin: 20px 0 15px
-	&:before,
-	&:after
-		content: ""
-		position: relative
-		display: inline-block
-		vertical-align: middle
-		width: 50%
-		height: 4px
-		top: -1px
-		border-bottom: 1px solid $green
-	&:after
-		right: -10px
-		margin-right: -50%
-	&:before
-		left: -10px
-		margin-left: -50%
-
 
 
 .mark
-	width: 20%
+	width: 213px
 	display: inline-block
 	padding: 10px 0
+	height: 265px
 	+clr
+	&__img
+		position: relative
+		width: 215px
+		height: 125px
+		margin-bottom: 25px
 	img
-		display: block
-		padding-bottom: 30px
-		margin: 0 auto
+		position: absolute
+		bottom: 0
+		left: 50%
+		+translate(-50%,0)
+		max-width: 100%
+		max-height: 100%
+		width: auto
+		height: auto
 	&__name
 		font-size: 15px
 		color: $tc
@@ -202,13 +181,89 @@
 			i
 				+s(basketin_h)
 
+.stick
+	padding-bottom: 30px
+	+clr
+.rod
+	position: relative
+	width: 50%
+	float: left
+	+clr
+	&__img
+		background-color: #FFF
+		position: relative
+		float: left
+		width: 246px
+		height: 280px
+		text-align: center
+		overflow: hidden
+		margin-right: 30px
+		&_wrap
+			+vcenter
+	&__title
+		display: inline
+		font-size: 20px
+		line-height: 20px
+		text-transform: uppercase
+		color: $tc
+		margin-bottom: 10px
+		+rb
+	p
+		font-size: 14px
+		color: $tc
+		+rl
+	button
+		width: 130px
+		height: 31px
+		padding-left: 10px
+		text-align: left
+		margin-top: 20px
+		i
+			position: absolute
+			top: 8px
+			right: 12px
+			+s(particular)
+		// &:hover
+		// 	color: #FFF
+		// 	background-color: $green
+		// 	i
+		// 		+s(particular_h)
 
-
-
-
-
-
-
+.cane
+	padding-bottom: 10px
+	+clr
+.twig
+	width: 244px
+	display: inline-block
+	margin-right: 30px
+	vertical-align: top
+	&:nth-child(4n)
+		margin-right: 0
+	&__img
+		background-color: #FFF
+		position: relative
+		float: left
+		width: 100%
+		height: 150px
+		text-align: center
+		overflow: hidden
+		margin-right: 30px
+		margin-bottom: 12px
+		&_wrap
+			+vcenter
+	&__title
+		font-size: 16px
+		line-height: 16px
+		color: $tc
+		border-bottom: 1px dotted $tc
+		+rb
+		&:hover
+			color: $green
+			border-bottom: 1px solid $n
+	p
+		color: $tc
+		font-size: 13px
+		margin-top: 5px
 
 
 
