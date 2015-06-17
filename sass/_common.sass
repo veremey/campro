@@ -49,21 +49,21 @@
 
 
 =rl
-	font-family: Roboto, Arial, sans-serif
+	font-family: 'Roboto', Arial, sans-serif
 	font-weight: 300 //light
 =rr
-	font-family: Roboto, Arial, sans-serif
+	font-family: 'Roboto', Arial, sans-serif
 	font-weight: 400 //regular
 =rm
-	font-family: Roboto, Arial, sans-serif
+	font-family: 'Roboto', Arial, sans-serif
 	font-weight: 500 //medium
 
 =rb
-	font-family: Roboto, Arial, sans-serif
+	font-family: 'Roboto', Arial, sans-serif
 	font-weight: 700 //bold
 
 body
-	font-family: Roboto, Arial, sans-serif
+	font-family: 'Roboto', Arial, sans-serif
 	font-size: 14px
 	line-height: 1.6
 	min-width: 1100px
@@ -141,14 +141,14 @@ $green: #2ec154
 	padding: 1px
 	+clr
 .logo
-	margin: 12px 0
+	margin: 8px 0
 	float: left
 	+s(logo)
 	+hide-text
 .work
 	width: 545px
 	float: right
-	margin-top: 55px
+	margin-top: 45px
 	+clr
 	&_1
 		float: left
@@ -160,7 +160,7 @@ $green: #2ec154
 		font-size: 20px
 		line-height: 24px
 		color: $tc
-		margin-bottom: 19px
+		margin-bottom: 14px
 		+rl
 		&:hover
 			color: $green
@@ -175,10 +175,10 @@ $green: #2ec154
 		i
 			position: absolute
 			top: 2px
-			left: -29px
+			left: -39px
 			+s(clock)
 .header__tel i
-	left: -25px
+	left: -35px
 	+s(mob)
 
 .header__user
@@ -229,7 +229,7 @@ $green: #2ec154
 		color: $tc
 		border-bottom: 1px solid $n
 		font-size: 16px
-		margin: 25px 18px 0
+		margin: 23px 16px 0
 		+rl
 		&:hover
 			color: $green
@@ -239,7 +239,7 @@ $green: #2ec154
 	float: right
 	&_wrap
 		position: relative
-		margin-top: 25px
+		margin-top: 20px
 		float: left
 		input
 			width: 240px
@@ -260,8 +260,8 @@ $green: #2ec154
 		font-size: 13px
 		border-bottom: 1px dotted $green
 		float: right
-		margin-right: 2px
-		margin-top: 30px
+		margin-right: -2px
+		margin-top: 25px
 		&:hover
 			border-bottom: 1px solid $n
 
@@ -396,7 +396,10 @@ $green: #2ec154
 	width: 122px
 	+clr
 .footer__nav
-	+vcenter
+	position: absolute
+	top: 50%
+	left: 50%
+	+translate(-60%, -50%)
 	li
 		display: inline-block
 		text-align: center
@@ -432,11 +435,11 @@ $green: #2ec154
 
 .fin
 	float: right
-	width: 318px
 	button
 		position: relative
 		width: 53px
 		height: 33px
+		margin-left: 10px
 		background-color: $n
 		+border-radius(5px)
 		+box-shadow(0 1px 2px rgba(0,0,0,.17))

@@ -7,6 +7,7 @@
 	.cycle-slideshow
 		overflow: hidden
 
+
 .big-slider
 	+clr
 	&__item
@@ -31,7 +32,7 @@
 			width: auto
 	&__content
 		color: #fff
-		padding: 60px 0 20px
+		padding: 77px 0 20px
 		text-align: center
 		h2
 			text-transform: uppercase
@@ -49,7 +50,7 @@
 			color: $green
 			line-height: 60px
 			margin-left: -70px
-			margin-top: 24px
+			margin-top: 29px
 			i
 				position: absolute
 				top: 15px
@@ -87,25 +88,26 @@
 		background-color: #302f2f
 	+clr
 
-
-
-
 .line
 	background-color: #302f2f
 	+clr
 	&__list
+		font-size: 0
+		height: 83px
 		+clr
 		li
 			text-align: center
 			display: inline-block
 			width: 33%
 			height: 83px
+			vertical-align: top
 		a
 			display: block
 			position: relative
 			+vertical
 			font-size: 15px
 			line-height: 15px
+			padding-left: 80px
 			color: #FFF
 			margin-top: 30px
 			+rr
@@ -116,30 +118,28 @@
 				position: absolute
 			.delivery1
 				top: -20px
-				left: -15px
+				left: 25px
 				+s(delivery1)
 			.shoes
 				top: -5px
-				left: -15px
+				left: 35px
 				+s(shoes)
 			.return
 				top: -12px
-				left: 35px
+				left: 85px
 				+s(return)
-
-
 
 .mark
 	width: 213px
 	display: inline-block
-	padding: 10px 0
+	padding: 10px 0 30px
 	height: 265px
 	+clr
 	&__img
 		position: relative
 		width: 215px
 		height: 125px
-		margin-bottom: 25px
+		margin-bottom: 35px
 	img
 		position: absolute
 		bottom: 0
@@ -164,11 +164,11 @@
 	.btn
 		display: block
 		width: 155px
-		height: 30px
+		height: 33px
 		font-size: 15px
 		text-align: left
 		padding-left: 20px
-		margin: 10px auto 10px
+		margin: 18px auto 10px
 		+rb
 		i
 			position: absolute
@@ -248,7 +248,7 @@
 		text-align: center
 		overflow: hidden
 		margin-right: 30px
-		margin-bottom: 12px
+		margin-bottom: 9px
 		&_wrap
 			+vcenter
 	&__title
@@ -268,13 +268,97 @@
 
 
 
+//popup
 
+.overlay
+	display: block
+	position: fixed
+	z-index: 1000
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0, 0, 0, .3)
+.popup
+	position: fixed
+	z-index: 2000
+	top: 100px
+	right: 250px
+	background-color: #FFF
+	width: 273px
+	height: 278px
+	padding: 25px 25px 20px 25px
+	+box-shadow(0 7px 5px rgba(0,0,0,.2))
+	&__top
+		position: relative
+		text-align: center
+		padding-top: 20px
+		span
+			text-transform: uppercase
+			font-size: 15px
+			color: $tc
+			+rb
+	&__close
+		position: absolute
+		top: -55px
+		right: -65px
+		+s(close_pop)
+	&__main
+		p
+			display: inline-block
+			font-size: 15px
+			line-height: 17px
+			+rl
+		a
+			color: $green
+			font-size: 15px
+			line-height: 17px
+			float: left
+			+rr
+			border-bottom: 1px dotted $green
+			&:hover
+				border-bottom: 1px solid $n
+			+rr
+.js-validate
+	margin-bottom: 10px
+.input-wrap
+	margin-top: 10px
+	position: relative
+	span
+		font-size: 15px
+		color: $tc
+		+rl
+	input
+		width: 251px
+		height: 29px
+		padding: 0 10px
+		border: 1px solid #cfc8c8
+		background-color: #f5f5f5
+	label
+		position: absolute
+		bottom: -20px
+		left: 0
+		color: #f00
+		font-size: 12px
 
-
-
-
-
-
+.popup__btn
+	margin-top: 15px
+	height: 27px
+	a
+		color: $green
+		font-size: 15px
+		float: left
+		margin-top: 8px
+		+rr
+		border-bottom: 1px dotted $green
+		&:hover
+			border-bottom: 1px solid $n
+	.btn
+		width: 113px
+		height: 27px
+		font-size: 15px
+		float: right
+		+rr
 
 
 
