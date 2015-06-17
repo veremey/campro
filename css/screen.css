@@ -183,13 +183,13 @@ body { font-family: "Roboto", Arial, sans-serif; font-size: 14px; line-height: 1
 .sidebar__title .close { position: absolute; top: 5px; right: 0; background: url('../img/icons-sa716b76360.png') 0 -175px no-repeat; width: 12px; height: 12px; }
 .sidebar__title .kick { position: absolute; top: 3px; right: 0; }
 
-.branch { position: relative; padding: 5px 0 20px; }
+.branch { position: relative; padding: 0px 0 10px; }
 .branch li { display: block; }
 
 .radio { display: inline-block; color: #363636; }
 .radio input { position: absolute; left: 0; top: 4px; opacity: 0; z-index: 2; }
 .radio input:checked + span:after { content: ""; position: absolute; left: -25px; top: 4px; width: 8px; height: 8px; background: url('../img/icons-sa716b76360.png') 0 -81px no-repeat; width: 14px; height: 14px; }
-.radio span { position: relative; display: inline-block; padding-left: 0px; margin-left: 25px; margin-top: 5px; font-size: 15px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
+.radio span { position: relative; display: inline-block; padding-left: 0px; margin-left: 25px; margin-bottom: 5px; font-size: 15px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 .radio span:before { content: ""; position: absolute; left: -25px; top: 4px; background: url('../img/icons-sa716b76360.png') 0 -1006px no-repeat; width: 14px; height: 14px; }
 
 .filter__body { padding-top: 19px; width: 98%; }
@@ -207,6 +207,9 @@ body { font-family: "Roboto", Arial, sans-serif; font-size: 14px; line-height: 1
 
 .js-ui-slider-to { float: right; margin-right: -5px; }
 
+.scroll-pane { width: 100%; height: 175px; overflow: auto; margin-top: 10px; }
+.scroll-pane:focus { outline: none; }
+
 .stem { float: right; width: 837px; *zoom: 1; }
 .stem:after { content: " "; display: table; clear: both; }
 
@@ -221,7 +224,7 @@ body { font-family: "Roboto", Arial, sans-serif; font-size: 14px; line-height: 1
 .trunk__right a { position: relative; border-bottom: none; padding-right: 20px; color: #363636; font-family: "Roboto", Arial, sans-serif; font-weight: 500; }
 .trunk__right a i { position: absolute; top: 7px; right: 0; background: url('../img/icons-sa716b76360.png') 0 -1294px no-repeat; width: 11px; height: 6px; }
 
-.shaft a { display: inline-block; font-size: 12px; color: #F00; line-height: 1.2; border-bottom: 1px dotted #ff0000; text-transform: uppercase; margin-right: 10px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
+.shaft a { display: inline-block; font-size: 12px; color: #F00; line-height: 1.2; border-bottom: 1px dotted #f00; text-transform: uppercase; margin-right: 10px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 .shaft a:hover { border-bottom: 1px solid transparent; }
 .shaft p { position: relative; display: inline-block; color: #707070; font-size: 12px; margin-right: 40px; text-transform: uppercase; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 .shaft p button { background-color: transparent; position: absolute; top: 3px; right: -17px; background: url('../img/icons-sa716b76360.png') 0 -175px no-repeat; width: 12px; height: 12px; }

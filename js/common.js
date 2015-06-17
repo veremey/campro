@@ -164,6 +164,16 @@ function ui_slider() {
 }
 ui_slider();
 
+// scroll in sidebar
+
+$(function()
+  {
+    $('.scroll-pane').jScrollPane({
+      mouseWheelSpeed:4,
+      animateScroll: true
+    });
+  });
+
 
 
 });
