@@ -16,7 +16,7 @@
 		font-size: 15px
 		color: $green
 
-//caatalog
+//catalog
 
 .catalog
 	margin-top: 15px
@@ -50,7 +50,6 @@
 			position: absolute
 			top: 3px
 			right: 0
-
 
 .branch
 	position: relative
@@ -90,3 +89,104 @@
 			left: -25px
 			top: 4px
 			+s(non_check)
+
+.filter__body
+	padding-top: 19px
+	width: 98%
+
+.ui-widget-content
+	position: relative
+	height: 3px
+	background-color: #C5C3C3
+.ui-slider-range
+	position: absolute
+	z-index: 1
+	top: 0
+	height: 3px
+	background-color: #707070
+.ui-slider-handle
+	position: absolute
+	top: 50%
+	margin: -5px 0 0
+	width: 3px
+	height: 9px
+	background-color: #3E3C3C
+	z-index: 2
+	span
+		display: none
+.ui-slider__top
+	.input
+		width: 36px
+		margin-top: 5px
+.js-ui-slider-from
+	float: left
+.js-ui-slider-to
+	float: right
+	margin-right: -5px
+
+
+// AND SIDEBAR
+
+.stem
+	float: right
+	width: 837px
+	+clr
+.trunk
+	height: 25px
+	border-bottom: 1px solid #d4d4d4
+	+clr
+	&__left
+		float: left
+	p,
+	a
+		display: inline-block
+		font-size: 15px
+		color: #707070
+		text-transform: uppercase
+		+rl
+	a
+		margin: 0 5px 0 2px
+		line-height: 1.2
+		border-bottom: 1px dotted #707070
+		&:hover
+			color: $green
+			border-bottom: 1px solid $n
+.trunk__right
+	float: right
+	a
+		position: relative
+		border-bottom: none
+		padding-right: 20px
+		color: $tc
+		+rm
+		i
+			position: absolute
+			top: 7px
+			right: 0
+			+s(trunk_b)
+.shaft
+	a
+		display: inline-block
+		font-size: 12px
+		color: #F00
+		line-height: 1.2
+		border-bottom: 1px dotted #ff0000
+		text-transform: uppercase
+		margin-right: 10px
+		+rl
+		&:hover
+			border-bottom: 1px solid $n
+	p
+		position: relative
+		display: inline-block
+		color: #707070
+		font-size: 12px
+		margin-right: 40px
+		text-transform: uppercase
+		+rl
+		button
+			background-color: $n
+			position: absolute
+			top: 3px
+			right: -17px
+			+s(close_sdb)
