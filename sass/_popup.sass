@@ -1,0 +1,194 @@
+
+//popup
+
+.overlay
+	display: block
+	position: fixed
+	z-index: 1000
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0, 0, 0, .3)
+.popup
+	position: fixed
+	z-index: 2000
+	top: 100px
+	right: 250px
+	background-color: #FFF
+	width: 273px
+	height: 278px
+	padding: 25px 25px 20px 25px
+	+box-shadow(0 7px 5px rgba(0,0,0,.2))
+	&__top
+		position: relative
+		text-align: center
+		padding-top: 20px
+		span
+			text-transform: uppercase
+			font-size: 15px
+			color: $tc
+			+rb
+	&__close
+		position: absolute
+		top: -55px
+		right: -65px
+		+s(close_pop)
+	&__main
+		p
+			display: inline-block
+			font-size: 15px
+			line-height: 17px
+			+rl
+		a
+			color: $green
+			font-size: 15px
+			line-height: 17px
+			float: left
+			+rr
+			border-bottom: 1px dotted $green
+			&:hover
+				border-bottom: 1px solid $n
+			+rr
+
+.popup__btn
+	margin-top: 15px
+	height: 27px
+	a
+		color: $green
+		font-size: 15px
+		float: left
+		margin-top: 8px
+		+rr
+		border-bottom: 1px dotted $green
+		&:hover
+			border-bottom: 1px solid $n
+	.btn
+		width: 113px
+		height: 27px
+		font-size: 15px
+		float: right
+		+rr
+
+.popup-goods
+	position: fixed
+	top: 100px
+	width: 865px
+	height: 380px
+	left: 50%
+	margin-left: -432px
+	z-index: 1000
+	background-color: #FFF
+	+box-shadow(0 7px 5px rgba(0,0,0,.2))
+.product
+	width: 400px
+	float: left
+	margin: 30px 0 30px 30px
+	height: 320px
+	background-color: #ccc
+
+.order
+	position: relative
+	width: 400px
+	float: right
+	height: 320px
+	margin: 30px 30px 30px 0
+	.lot__name
+		width: 315px
+	.lot__item
+		margin-bottom: 20px
+.input__row
+	.btn
+		width: 160px
+		height: 35px
+		margin-left: 23px
+		background-color: $green
+		color: #FFF
+		font-size: 15px
+		+rb
+		&:hover
+			color: $green
+			background-color: #FFF
+			+tr(.5s)
+.input-row__field
+	display: inline-block
+	vertical-align: middle
+	width: 175px
+.select
+	position: relative
+	cursor: pointer
+	font-size: 15px
+	font-weight: bold
+.select.is-active .select__text:after
+	+rotate(180)
+.select__text
+	position: relative
+	display: block
+	padding: 0 25px 0 11px
+	height: 33px
+	font-size: 15px
+	text-transform: uppercase
+	line-height: 33px
+	border: 1px solid #cfc9c9
+	background: #f5f5f5
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	+rr
+	&:after
+		content: ""
+		position: absolute
+		top: 13px
+		right: 9px
+		+arr(11, 6, #808080, b)
+.select__list
+	position: absolute
+	display: none
+	left: 0
+	right: 0
+	top: 32px
+	z-index: 100
+	border: 1px solid #cfc9c9
+	background: #fff
+	font-weight: normal
+.select__list li
+	font-size: 15px
+	text-transform: uppercase
+	line-height: 33px
+	background: #f5f5f5
+	padding: 5px 11px
+	cursor: pointer
+	-webkit-transition: background 0.2s linear
+	-moz-transition: background 0.2s linear
+	-o-transition: background 0.2s linear
+	transition: background 0.2s linear
+	&:hover
+		background-color: #ccc
+
+.order__inside
+	margin-top: 20px
+	h3
+		font-size: 15px
+		border-bottom: 1px solid #d9d9d9
+		margin-bottom: 7px
+		+rl
+	p
+		font-size: 14px
+		color: $tc
+		+rl
+	a
+		position: absolute
+		bottom: -5px
+		left: 0
+		text-transform: uppercase
+		font-size: 15px
+		color: $green
+		border-bottom: 1px dotted $green
+		&:hover
+			border-bottom: 1px solid $n

@@ -226,6 +226,8 @@
 	// &:nth-child(4n)
 	// 	margin-left: -15px
 	&:hover
+		button
+			display: block
 		.lot__visible
 			z-index: 5
 		.lot__wrap
@@ -243,6 +245,7 @@
 		+clr
 	&__name
 		text-transform: uppercase
+		width: 160px
 		font-size: 15px
 		color: $tc
 		float: left
@@ -261,6 +264,13 @@
 		color: #707070
 		line-height: 18px
 		+rl
+	button
+		display: none
+		position: absolute
+		top: 5px
+		right: 5px
+		z-index: 3
+		+s(eye)
 
 	&__wrap
 		display: none
@@ -273,12 +283,7 @@
 		right: 0
 		border: 1px solid #e3e3e3
 		+box-shadow(0 6px 35px rgba(0,0,0,.13))
-		i
-			position: absolute
-			top: 20px
-			right: 30px
-			z-index: 3
-			+s(eye)
+
 	&__size
 		position: absolute
 		bottom: 5px

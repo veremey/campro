@@ -34,6 +34,18 @@ $(document).ready(function() {
 				 return false;
 		 });
 
+		 $(".js-goods").click(function (){
+				 $(".js-popup-goods").show();
+				 overlay.show();
+				 return false;
+		 });
+
+		$(document).click(function() {
+			 $(".js-drop ul").hide();
+			 $(".js-select-list").hide();
+			 $(".js-select").removeClass("is-active");
+				});
+
 
 });
 
@@ -43,87 +55,87 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    function validate() {
-    $('.js-validate').each(function(){
-      if ($(this).length > 0) {
-        $(this).validate({
-          errorClass: 'has-error',
-          rules: {
-            username: {
-              minlength: 2
-            },
-            any: {
-              minlength: 2
-            },
-            password: {
-              minlength: 5
-            },
-            confirm_password: {
-              minlength: 5,
-              equalTo: '#password'
-            },
-            email: {
-              email: true
-            },
-            tel: {
-              minlength: 5,
-            },
-            address: {
-              minlength: 2
-            },
-            message: {
-              minlength: 4
-            },
-            field: {
-              required: true
-            },
-            text_area:{
-              minlength: 4
-            }
-            // fruit: {
-            //   required: true
-            // }
-          },
-          messages: {
-            firstname: 'Вас так зовут?',
-            lastname: 'У вас такая фамилия?',
-            fathername: 'У вас такое отчество?',
-            password: {
-              required: 'Введите пароль',
-              minlength: 'Минимум 5 символов'
-            },
-            confirm_password: {
-               required: 'Пароли не совпадают',
-               minlength: 'Минимум 5 символов',
-               equalTo: 'Пароли не совпадают'
-            },
-            email: 'Неверный формат',
-            address: 'Это Ваш адрес?',
-            any: 'Заполните поле',
-            company: 'Заполните поле',
-            tel: {
-              required: '* Введите Ваш терефон',
-              minlength: 'Минимум 5 символов'
-            },
-            username: {
-              required: '* Введите Ваше имя',
-              minlength: 'Минимум 2 символa'
-            },
-            message: {
-              required: 'Заполните поле',
-              minlength: 'Заполните поле',
-            },
-            text_area: {
-              required: '* Заполните поле',
-              minlength: 'Заполните поле'
-            }
-          }
-        });
-      }
-    });
-  }
+		function validate() {
+		$('.js-validate').each(function(){
+			if ($(this).length > 0) {
+				$(this).validate({
+					errorClass: 'has-error',
+					rules: {
+						username: {
+							minlength: 2
+						},
+						any: {
+							minlength: 2
+						},
+						password: {
+							minlength: 5
+						},
+						confirm_password: {
+							minlength: 5,
+							equalTo: '#password'
+						},
+						email: {
+							email: true
+						},
+						tel: {
+							minlength: 5,
+						},
+						address: {
+							minlength: 2
+						},
+						message: {
+							minlength: 4
+						},
+						field: {
+							required: true
+						},
+						text_area:{
+							minlength: 4
+						}
+						// fruit: {
+						//   required: true
+						// }
+					},
+					messages: {
+						firstname: 'Вас так зовут?',
+						lastname: 'У вас такая фамилия?',
+						fathername: 'У вас такое отчество?',
+						password: {
+							required: 'Введите пароль',
+							minlength: 'Минимум 5 символов'
+						},
+						confirm_password: {
+							 required: 'Пароли не совпадают',
+							 minlength: 'Минимум 5 символов',
+							 equalTo: 'Пароли не совпадают'
+						},
+						email: 'Неверный формат',
+						address: 'Это Ваш адрес?',
+						any: 'Заполните поле',
+						company: 'Заполните поле',
+						tel: {
+							required: '* Введите Ваш терефон',
+							minlength: 'Минимум 5 символов'
+						},
+						username: {
+							required: '* Введите Ваше имя',
+							minlength: 'Минимум 2 символa'
+						},
+						message: {
+							required: 'Заполните поле',
+							minlength: 'Заполните поле',
+						},
+						text_area: {
+							required: '* Заполните поле',
+							minlength: 'Заполните поле'
+						}
+					}
+				});
+			}
+		});
+	}
 
-  validate();
+	validate();
 
 });
 
@@ -131,49 +143,88 @@ $(document).ready(function() {
 
 
 function ui_slider() {
-    $(".js-ui-slider").each(function(){
-        var slider = $(this).find(".js-ui-slider-main");
-        var input_from = $(this).find(".js-ui-slider-from");
-        var input_to = $(this).find(".js-ui-slider-to");
-        slider.slider({
-            range: true,
-            min: 0,
-            max: 23500,
-            step: 5,
-            values: [ 12595, 23500 ],
-            slide: function( event, ui ) {
-                $(this).find(".ui-slider-handle").html("<span></span>");
-                var handle_0 = $(this).find(".ui-slider-range").next().find("span")
-                var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
-                input_from.val(ui.values[0]);
-                input_to.val(ui.values[1]);
-                handle_0.text(ui.values[0]);
-                handle_1.text(ui.values[1]);
-            }
-        });
-        console.log(handle_0);
-        console.log(handle_1);
-        $(this).find(".ui-slider-handle").html("<span></span>");
-        var handle_0 = $(this).find(".ui-slider-range").next().find("span")
-        var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
-        handle_0.text(slider.slider( "values", 0 ));
-        handle_1.text(slider.slider( "values", 1 ));
-        input_from.val(slider.slider( "values", 0 ));
-        input_to.val(slider.slider( "values", 1 ));
-    });
+		$(".js-ui-slider").each(function(){
+				var slider = $(this).find(".js-ui-slider-main");
+				var input_from = $(this).find(".js-ui-slider-from");
+				var input_to = $(this).find(".js-ui-slider-to");
+				slider.slider({
+						range: true,
+						min: 0,
+						max: 23500,
+						step: 5,
+						values: [ 12595, 23500 ],
+						slide: function( event, ui ) {
+								$(this).find(".ui-slider-handle").html("<span></span>");
+								var handle_0 = $(this).find(".ui-slider-range").next().find("span")
+								var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
+								input_from.val(ui.values[0]);
+								input_to.val(ui.values[1]);
+								handle_0.text(ui.values[0]);
+								handle_1.text(ui.values[1]);
+						}
+				});
+				console.log(handle_0);
+				console.log(handle_1);
+				$(this).find(".ui-slider-handle").html("<span></span>");
+				var handle_0 = $(this).find(".ui-slider-range").next().find("span")
+				var handle_1 = $(this).find(".ui-slider-range").next().next().find("span");
+				handle_0.text(slider.slider( "values", 0 ));
+				handle_1.text(slider.slider( "values", 1 ));
+				input_from.val(slider.slider( "values", 0 ));
+				input_to.val(slider.slider( "values", 1 ));
+		});
 }
 ui_slider();
 
 // scroll in sidebar
 
 $(function()
-  {
-    $('.scroll-pane').jScrollPane({
-      mouseWheelSpeed:4,
-      animateScroll: true
-    });
-  });
+	{
+		$('.scroll-pane').jScrollPane({
+			mouseWheelSpeed:4,
+			animateScroll: true
+		});
+	});
 
+
+// check select
+
+
+
+ function select() {
+	$(".js-select").each(function(){
+		var select_list = $(this).parent().find(".js-select-list");
+		var text = select_list.find("li").first().text();
+		$(this).find(".js-select-text").text(text);
+		$(this).click(function(event){
+			if ($(this).hasClass("is-active")) {
+			    $(this).removeClass("is-active");
+			    select_list.slideUp("fast");
+			}
+			else {
+			    $(".js-select").removeClass("is-active");
+			    $(".js-select-list").hide();
+			    select_list.slideDown("fast");
+			    $(this).addClass("is-active");
+			}
+			event.stopPropagation();
+		});
+		select_list.find("li").click(function(event) {
+			var id = $(this).attr("data-id");
+			var text = $(this).text();
+			$(this).parent().parent().find(".js-select-text").text(text);
+			$(this).parent().parent().find(".js-select-input").val(id);
+			$(this).parent().hide();
+			$(this).parents(".js-select").removeClass("is-active");
+			event.stopPropagation();
+		});
+	});
+}
+select();
+
+$('.js-select').click(function(event){
+    event.stopPropagation();
+});
 
 
 });

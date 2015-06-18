@@ -266,57 +266,6 @@
 		margin-top: 5px
 
 
-//popup
-
-.overlay
-	display: block
-	position: fixed
-	z-index: 1000
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	background-color: rgba(0, 0, 0, .3)
-.popup
-	position: fixed
-	z-index: 2000
-	top: 100px
-	right: 250px
-	background-color: #FFF
-	width: 273px
-	height: 278px
-	padding: 25px 25px 20px 25px
-	+box-shadow(0 7px 5px rgba(0,0,0,.2))
-	&__top
-		position: relative
-		text-align: center
-		padding-top: 20px
-		span
-			text-transform: uppercase
-			font-size: 15px
-			color: $tc
-			+rb
-	&__close
-		position: absolute
-		top: -55px
-		right: -65px
-		+s(close_pop)
-	&__main
-		p
-			display: inline-block
-			font-size: 15px
-			line-height: 17px
-			+rl
-		a
-			color: $green
-			font-size: 15px
-			line-height: 17px
-			float: left
-			+rr
-			border-bottom: 1px dotted $green
-			&:hover
-				border-bottom: 1px solid $n
-			+rr
 .js-validate
 	margin-bottom: 10px
 .input-wrap
@@ -338,25 +287,6 @@
 		left: 0
 		color: #f00
 		font-size: 12px
-
-.popup__btn
-	margin-top: 15px
-	height: 27px
-	a
-		color: $green
-		font-size: 15px
-		float: left
-		margin-top: 8px
-		+rr
-		border-bottom: 1px dotted $green
-		&:hover
-			border-bottom: 1px solid $n
-	.btn
-		width: 113px
-		height: 27px
-		font-size: 15px
-		float: right
-		+rr
 
 
 
