@@ -85,7 +85,32 @@
 	float: left
 	margin: 30px 0 30px 30px
 	height: 320px
-	background-color: #ccc
+.product__left
+	position: relative
+	height: 100%
+	&_big
+		float: left
+	&_small
+		float: right
+		margin-right: 35px
+	&:before
+		content: ""
+		position: absolute
+		right: 15px
+		top: 0
+		bottom: 0
+		height: 100%
+		width: 3px
+		background-color: #e8e7e7
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 15px
+		height: 83px
+		width: 3px
+		background-color: #707070
+
 
 .order
 	position: relative
