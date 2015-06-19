@@ -1,0 +1,108 @@
+.catalog__left
+	position: relative
+	width: 50%
+	float: left
+.carousel
+	position: relative
+.scale
+	position: absolute
+	display: block
+	top: 10px
+	right: 20px
+	+s(scale)
+.carousel__preview
+	margin-top: 20px
+	.slick-slide
+		img
+			border: 1px solid $green
+
+
+
+			//shadow
+		// &:hover
+		// 	~ .carousel__shadow-1,
+		// 	+ .carousel__shadow-2
+		// 		display: none
+
+// .carousel__shadow-1,
+// .carousel__shadow-2
+// 	position: absolute
+// 	bottom: 1px
+// 	width: 153px
+// 	height: 131px
+// 	+box-shadow(inset 200px 200px 0px 200px rgba(0,0,0,0.3))
+// 	&:hover
+// 		display: none
+// .carousel__shadow-1
+// 	right: 24px
+// .carousel__shadow-2
+// 	right: 204px
+
+.share
+	margin-top: 20px
+	+clr
+	p
+		float: left
+		text-transform: uppercase
+		display: inline-block
+		font-size: 14px
+		color: $tc
+		margin-top: 4px
+		margin-right: 25px
+		+rm
+.facebook,
+.vk
+	position: relative
+	float: left
+	width: 187px
+	margin-right: 10px
+	&__btn
+		position: relative
+		display: block
+		float: left
+		&:after
+			content: ''
+			position: absolute
+			top: -3px
+			right: -54px
+			+s(share_f_itm)
+
+.facebook
+	&__btn
+		+s(share_f)
+	span
+		position: absolute
+		top: 1px
+		right: 46px
+.vk
+	&__btn
+		+s(share_vk)
+	span
+		position: absolute
+		top: 1px
+		right: 27px
+
+
+.catalog__right
+	float: right
+	width: 50%
+	+clr
+.exposition
+	+clr
+	&__title
+		font-size: 20px
+		color: $tc
+		margin-bottom: 7px
+		+rb
+	&__name
+		font-size: 18px
+		line-height: 22px
+		color: $tc
+		+rl
+h4 + .exposition__wrap
+	margin-top: 10px
+.exposition__wrap
+	span
+		color: #8c8c8c
+		margin-right: 2px
+

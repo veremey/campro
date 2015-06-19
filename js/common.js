@@ -134,13 +134,10 @@ $(document).ready(function() {
 			}
 		});
 	}
-
 	validate();
-
 });
 
 // polzunok
-
 
 function ui_slider() {
 		$(".js-ui-slider").each(function(){
@@ -186,10 +183,7 @@ $(function()
 		});
 	});
 
-
 // check select
-
-
 
  function select() {
 	$(".js-select").each(function(){
@@ -225,6 +219,39 @@ select();
 $('.js-select').click(function(event){
     event.stopPropagation();
 });
+
+
+	 $('.js-carousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.js-carousel-preview',
+	});
+	$('.js-carousel-preview').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		asNavFor: '.js-carousel',
+		dots: false,
+		arrows: true,
+		infinite: false,
+		centerMode: false,
+		focusOnSelect: true,
+	});
+
+	$(".js-carousel-preview .slick-slide").on("click",function (){
+	  $(this).parent().find(".slick-slide").removeClass("is-active");
+	  $(this).addClass("is-active")
+
+	  return false;
+	});
+
+// $('.slick-slide').hover(function(){
+// 	$(this).parents().find('.carousel__shadow-1').hide(1000)
+// });
+
+
+
 
 
 });
