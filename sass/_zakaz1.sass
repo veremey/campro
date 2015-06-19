@@ -1,0 +1,78 @@
+.table__head
+	th
+		position: relative
+		margin-top: -1px
+		border-bottom: 1px solid #C9C9C9
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			right: -1px
+			width: 1px
+			height: 45px
+			background-color: #c9c9c9
+			z-index: 1
+		&:last-child::after
+			display: none
+		&.is_active
+			border-left: 1px solid #C9C9C9
+			border-right: 1px solid #C9C9C9
+			background-color: #f0f0f0
+		&:first-child.is_active
+			border-right: 1px solid #C9C9C9
+			border-left: 1px solid $n
+		&:last-child.is_active
+			border-left: 1px solid #C9C9C9
+			border-right: 1px solid $n
+		p
+			color: #707070
+			line-height: 57px
+			font-size: 15px
+			+rl
+			span
+				font-size: 17px
+				+rb
+
+.thing
+	li
+		display: inline-block
+		line-height: 40px
+		color: #707070
+		font-size: 15px
+		+rl
+.thing__item_1
+	width: 140px
+.thing__item_2
+	width: 330px
+.thing__item_3
+	width: 110px
+.thing__item_4
+	width: 110px
+.thing__item_5
+	width: 145px
+.thing__item_6
+	width: 135px
+.thing__item_7
+	width: 89px
+
+.offspring
+	li
+		display: inline-block
+.offspring__item_1
+	width: 120px
+	margin-right: 20px
+.offspring__item_2
+	width: 310px
+	margin-right: 20px
+.offspring__item_3
+	width: 90px
+	margin-right: 20px
+.offspring__item_4
+	width: 90px
+	margin-right: 20px
+.offspring__item_5
+	width: 125px
+	margin-right: 20px
+.offspring__item_6
+	width: 115px
+	margin-right: 20px
