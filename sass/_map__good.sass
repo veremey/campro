@@ -8,7 +8,7 @@
 	position: absolute
 	display: block
 	top: 10px
-	right: 20px
+	right: 50px
 	+s(scale)
 .carousel__preview
 	margin-top: 20px
@@ -49,7 +49,7 @@
 		color: $tc
 		margin-top: 4px
 		margin-right: 25px
-		+rm
+		+rr
 .facebook,
 .vk
 	position: relative
@@ -85,9 +85,10 @@
 
 .catalog__right
 	float: right
-	width: 50%
+	width: 45.5%
 	+clr
 .exposition
+	margin-bottom: 15px
 	+clr
 	&__title
 		font-size: 20px
@@ -102,7 +103,86 @@
 h4 + .exposition__wrap
 	margin-top: 10px
 .exposition__wrap
+	color: #8c8c8c
+	font-size: 15px
+	+rm
 	span
 		color: #8c8c8c
-		margin-right: 2px
-
+		margin-left: 2px
+		+rl
+	a
+		font-size: 15px
+		color: $green
+		line-height: 16px
+		margin-left: 5px
+		border-bottom: 1px solid $green
+		+rr
+		&:hover
+			border-bottom: 1px solid $n
+.prod-tab
+	border-bottom: 1px solid #d9d9d9
+	+clr
+	.is-active
+		color: #FFF
+		background-color: #707070
+	&__item
+		display: inline-block
+		a
+			display: block
+			line-height: 24px
+			font-size: 15px
+			padding: 0 15px
+			color: $tc
+			background-color: #FFF
+			+rl
+.tab-cont
+	position: relative
+	margin: 10px 0 15px
+	p
+		font-size: 14px
+		color: $tc
+		line-height: 15px
+		+rm
+	.input__row
+		margin-top: 20px
+		padding-bottom: 20px
+		border-bottom: 1px solid #d9d9d9
+.shoe__size
+	li
+		line-height: 17px
+		padding: 3px 11px
+		+rl
+		&:hover
+			background-color: #E2E2E2
+.catalog__bay
+	margin-top: 20px
+	padding-bottom: 20px
+	border-bottom: 1px solid #d9d9d9
+	p
+		float: left
+		width: 110px
+		font-size: 20px
+		line-height: 35px
+		+rb
+		span
+			font-size: 18px
+			+rl
+.catalog__bay a,
+.store__locate
+	position: relative
+	font-size: 15px
+	display: inline-block
+	color: $green
+	margin-right: 10px
+	margin-top: 10px
+	border-bottom: 1px dotted $green
+	+rl
+	&:hover
+		border-bottom: 1px solid $n
+.store__locate
+	margin-left: 25px
+	i
+		position: absolute
+		top: -2px
+		left: -23px
+		+s(locate__icon)

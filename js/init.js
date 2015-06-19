@@ -5,4 +5,5 @@ head.load("js/lib/jquery.js",
 					"js/jquery-ui-1.10.3.custom.js",
 					"js/jquery.jscrollpane.js",
 					"js/jquery.mousewheel.js",
+					"js/yandexMapInit.js",
 					"js/common.js");

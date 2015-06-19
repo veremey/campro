@@ -99,12 +99,7 @@
 		margin-bottom: 20px
 .input__row
 	.btn
-		width: 160px
-		height: 35px
 		margin-left: 23px
-		background-color: $green
-		color: #FFF
-		font-size: 15px
 		+rb
 		&:hover
 			color: $green
@@ -192,3 +187,127 @@
 		border-bottom: 1px dotted $green
 		&:hover
 			border-bottom: 1px solid $n
+
+
+.popup-size
+	position: fixed
+	width: 234px
+	height: 243px
+	top: 50%
+	margin-top: -121px
+	left: 50%
+	margin-left: -117px
+	z-index: 1000
+	+box-shadow(0 7px 5px rgba(0,0,0,.2))
+	background-color: #FFF
+	.input-row
+		border: 1px solid #fff
+
+.input-row_size
+	width: 100%
+	text-align: center
+	height: 45px
+	.select__text
+		height: 45px
+		line-height: 45px
+		font-size: 15px
+		text-transform: uppercase
+		color: #FFF
+		background-color: #8B8B8B
+		+rm
+		&:after
+			content: ""
+			position: absolute
+			top: 19px
+			right: 30px
+			+arr(11, 6, #404040, b)
+	.select__list
+		top: 44px
+	.scroll-pane
+		height: 183px
+		li
+			text-align: left
+			padding-left: 15px
+			font-size: 15px
+			height: 25px
+			color: $tc
+			+rr
+			&:first-child
+				margin-top: 5px
+			&:hover
+				background-color: #E2E2E2
+	.jspDrag
+		background-color: #707070
+		width: 3px
+	.jspTrack
+		background-color: #e3e2e2
+		width: 3px
+
+.popup__location
+	position: fixed
+	width: 900px
+	top: 50%
+	margin-left: -450px
+	height: 475px
+	left: 50%
+	margin-top: -237px
+	background-color: #FFF
+	z-index: 1001
+
+.mapin
+	position: relative
+	width: 100%
+	height: 400px
+	overflow: hidden
+	padding: 1px
+	// z-index: 9999
+	+clr
+.ymaps-2-1-26-controls__toolbar,
+.ymaps-2-1-26-copyright,
+.ymaps-2-1-26-zoom__scale
+	display: none !important
+.ymaps-2-1-26-zoom
+	display: block !important
+	height: 35px !important
+.ymaps-2-1-26-controls__control
+	top: 240px !important
+	left: 20px !important
+.ymaps-2-1-26-zoom
+	bottom: -66px
+.ymaps-2-1-26-zoom__plus .ymaps-2-1-26-zoom__icon
+	width: 43px !important
+	height: 43px !important
+	background-image: url("../img/icons/map__plus.png") !important
+.ymaps-2-1-26-zoom .ymaps-2-1-26-zoom__button
+	width: 0 !important
+.ymaps-2-1-26-button_theme_normal
+	background: none !important
+	&:before
+		width: 0 !important
+		height: 0 !important
+		overflow: hidden !important
+
+.ymaps-2-1-26-zoom__minus .ymaps-2-1-26-zoom__icon
+	background-image: url("../img/icons/map__minus.png") !important
+	width: 43px !important
+	height: 43px !important
+.ymaps-2-1-26-zoom .ymaps-2-1-26-zoom__button
+	width: 0 !important
+
+.popup__location-town
+	margin-top: 15px
+	p
+		font-size: 14px
+		color: $tc
+		line-height: 16px
+		margin-left: 20px
+		+rr
+		span
+			margin-left: 5px
+			font-size: 14px
+			+rl
+	span
+		margin-left: 20px
+		line-height: 16px
+		font-size: 14px
+		+rl

@@ -34,8 +34,20 @@ $(document).ready(function() {
 				 return false;
 		 });
 
+		 $(".js-size").click(function (){
+				 $(".js-popup-size").show();
+				 overlay.show();
+				 return false;
+		 });
+
 		 $(".js-goods").click(function (){
 				 $(".js-popup-goods").show();
+				 overlay.show();
+				 return false;
+		 });
+
+		 $(".js-location").click(function (){
+				 $(".js-popup-location").show();
 				 overlay.show();
 				 return false;
 		 });
@@ -185,7 +197,7 @@ $(function()
 
 // check select
 
- function select() {
+function select() {
 	$(".js-select").each(function(){
 		var select_list = $(this).parent().find(".js-select-list");
 		var text = select_list.find("li").first().text();
@@ -221,7 +233,7 @@ $('.js-select').click(function(event){
 });
 
 
-	 $('.js-carousel').slick({
+	$('.js-carousel').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -230,7 +242,7 @@ $('.js-select').click(function(event){
 	});
 	$('.js-carousel-preview').slick({
 		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		asNavFor: '.js-carousel',
 		dots: false,
 		arrows: true,
@@ -252,6 +264,31 @@ $('.js-select').click(function(event){
 
 
 
+// tabs
 
+
+
+
+    function tab() {
+        $(".js-tab").each(function(){
+
+            var tab_link = $(this).find("a");
+            var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+            tab_cont.hide();
+            $(this).parents(".js-tab-group").find(".js-tab1").show();
+
+            tab_link.bind("click", function() {
+                var index = $(this).attr("href");
+                tab_link.removeClass("is-active");
+                tab_link.parent().removeClass("is-active");
+                $(this).addClass("is-active");
+                $(this).parent().addClass("is-active");
+                tab_cont.hide();
+                $(this).parents(".js-tab-group").find("."+index).slideDown("fast");
+                return false;
+            });
+        });
+    }
+    tab();
 
 });
