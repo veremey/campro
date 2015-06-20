@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>zakaz2</title>
+	<title>basket</title>
 	<meta name="viewport" content="initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
@@ -63,28 +63,42 @@
 		</div>
 	</div>
 	<div class="l_container">
-		<h2 class="big__title">оформление заказа</h2>
+		<h2 class="big__title">Корзина покупок</h2>
 		<div class="indent">
-			<table class="table">
-				<thead class="table__head">
-					<tr>
-						<th><p><span>1.</span> Состав заказа</p></th>
-						<th class="is_active"><p><span>2.</span> Адрес доставки</p></th>
-						<th><p><span>3.</span> Оплата и доставка</p></th>
-						<th><p><span>4.</span> Подтверждение</p></th>
-					</tr>
-				</thead>
-			</table>
-			<div class="indent__wrap">
-				<div class="delivery__adress">
-				<h4>Адрес доставки:</h4>
-				<p>г. Москва, </p>
-				<p>ул. Новгородская 5, кв. 28</p>
-				<div class="delivery__adress-link">
-					<a href="#">Редактировать</a>
-					<button class="btn">Подтвердить</button>
-				</div>
-				</div>
+			<div class="indent__wrap basket">
+				<ul class="thing">
+					<li class="thing__item_1">Фото</li>
+					<li class="thing__item_2">Наименование</li>
+					<li class="thing__item_3">Артикул</li>
+					<li class="thing__item_4">Удалить</li>
+					<li class="thing__item_5">Количество</li>
+					<li class="thing__item_6">Цена</li>
+					<li class="thing__item_7">Итого</li>
+				</ul>
+				<ul class="offspring ">
+					<li class="offspring__item_1">
+						<div class="basket__img">
+							<img src="img/g1.png" alt="">
+						</div>
+					</li>
+					<li class="offspring__item_2">
+						<p><span>ASICS</span> <br> Женские Кроссовки <br> Gel-Nimbus 12</p>
+					</li>
+					<li class="offspring__item_3">11111</li>
+					<li class="offspring__item_4">
+						<button class="offspring__dell js-del"></button></li>
+					<li class="offspring__item_5">
+						<div class="choose js-choose" data-max-number="99">
+							<input type="text" class="choose__input" value="10" readonly="">
+							<button class="choose__plus js-plus"></button>
+							<button class="choose__minus js-minus"></button>
+						</div> шт</li>
+					<li class="offspring__item_6">
+						<p><span>85000</span> руб.</p></li>
+					<li class="offspring__item_7">
+						<p><span>85000</span> руб.</p>
+					</li>
+				</ul>
 			</div>
 			<button class="btn bay">Продолжить</button>
 		</div>

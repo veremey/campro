@@ -30,6 +30,8 @@
 			border-left: 1px solid #C9C9C9
 			border-right: 1px solid #C9C9C9
 			background-color: #f0f0f0
+			p
+				color: $tc
 		&:first-child.is_active
 			border-right: 1px solid #C9C9C9
 			border-left: 1px solid $n
@@ -78,12 +80,13 @@
 	span
 		color: $tc
 		+rb
-	button
+	&__dell
 		display: block
 		margin-left: 10px
 		background-color: $n
 		+s(del__icon)
 	&__item_1
+		position: relative
 		width: 120px
 		margin-right: 20px
 	&__item_2
@@ -104,7 +107,7 @@
 		color: $tc
 		span
 			font-size: 17px
-			+rb
+			+rl
 	&__item_7
 		color: $tc
 		span
@@ -233,6 +236,8 @@
 	+clr
 	&__wrap
 		margin-bottom: 10px
+		&:last-child
+			margin-bottom: -5px
 	strong
 		font-size: 15px
 		color: $tc
@@ -241,3 +246,27 @@
 		font-size: 15px
 		color: #707070
 		+rl
+.confirm__green
+	p,
+	strong,
+	span
+		color: $green
+	strong
+		font-size: 17px
+		+rb
+	p
+		font-size: 17px
+		+rb
+		span
+			font-size: 20px
+			+rb
+.confirm__wrap_comment
+	span
+		text-transform: uppercase
+	textarea
+		resize: none
+		width: 608px
+		height: 60px
+		margin-top: 10px
+		background-color: #F0F0F0
+		padding: 10px 20px
