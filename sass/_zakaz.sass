@@ -174,3 +174,70 @@
 				background-color: #707070
 				color: #fff
 
+// #3
+
+.method
+	margin-top: 30px
+	+clr
+.way
+	width: 390px
+	padding-left: 150px
+	+clr
+	h3
+		font-size: 17px
+		color: $tc
+		text-transform: uppercase
+		+rb
+	p
+		font-size: 15px
+		color: #707070
+		line-height: 19px
+		+rl
+		span
+			display: inline-block
+			width: 170px
+	&__name
+		margin-bottom: 10px
+	.radio
+		margin-left: -37px
+		input
+			&:checked
+				+ span
+					&:after
+						left: -32px
+						top: 6px
+						+s(check_radio)
+		span
+			margin: 10px 0 10px 37px
+			font-size: 17px
+			line-height: 21px
+			color: $tc
+			+rr
+			&:before
+				top: 1px
+				left: -37px
+				+s(non_check_radio)
+
+.cost
+	margin-bottom: 25px
+	&:last-child
+		margin-bottom: 0
+
+//#4
+
+.confirm
+	position: relative
+	width: 715px
+	margin-left: 45px
+	margin-top: 10px
+	+clr
+	&__wrap
+		margin-bottom: 10px
+	strong
+		font-size: 15px
+		color: $tc
+		+rb
+	span
+		font-size: 15px
+		color: #707070
+		+rl
