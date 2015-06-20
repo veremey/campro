@@ -1,8 +1,20 @@
+//#1
+
+.indent
+	padding-bottom: 43px
+	.btn
+		float: right
+	+clr
+	&__wrap
+		padding-top: -1px
+		padding-bottom: 20px
+		margin-bottom: 20px
+		border-bottom: 1px solid #C9C9C9
+		border-top: 1px solid #C9C9C9
 .table__head
 	th
 		position: relative
 		margin-top: -1px
-		border-bottom: 1px solid #C9C9C9
 		&:after
 			content: ""
 			position: absolute
@@ -56,23 +68,109 @@
 	width: 89px
 
 .offspring
+	+clr
 	li
+		vertical-align: top
 		display: inline-block
-.offspring__item_1
-	width: 120px
-	margin-right: 20px
-.offspring__item_2
-	width: 310px
-	margin-right: 20px
-.offspring__item_3
-	width: 90px
-	margin-right: 20px
-.offspring__item_4
-	width: 90px
-	margin-right: 20px
-.offspring__item_5
-	width: 125px
-	margin-right: 20px
-.offspring__item_6
-	width: 115px
-	margin-right: 20px
+		font-size: 15px
+		color: #4D4D4D
+		+rl
+	span
+		color: $tc
+		+rb
+	button
+		display: block
+		margin-left: 10px
+		background-color: $n
+		+s(del__icon)
+	&__item_1
+		width: 120px
+		margin-right: 20px
+	&__item_2
+		width: 310px
+		margin-right: 20px
+	&__item_3
+		width: 90px
+		margin-right: 20px
+	&__item_4
+		width: 90px
+		margin-right: 20px
+	&__item_5
+		width: 125px
+		margin-right: 20px
+	&__item_6
+		width: 115px
+		margin-right: 20px
+		color: $tc
+		span
+			font-size: 17px
+			+rb
+	&__item_7
+		color: $tc
+		span
+			font-size: 18px
+			+rb
+	&__img
+		width: 118px
+		height: 66px
+		border: 1px solid $green
+		text-align: center
+		overflow: hidden
+		img
+			height: 100%
+
+//#2
+.indent__wrap
+	.regist__form
+		margin: 30px 0 0
+	.registration
+		width: 560px
+		p
+			width: 200px
+			font-size: 17px
+			color: $tc
+			+rr
+	.registration label.has-error
+		left: 220px
+
+
+//#2 registration
+
+.delivery__adress
+	margin-top: 30px
+	width: 300px
+	h4
+		font-size: 15px
+		color: $tc
+		line-height: 18px
+		+rb
+	p
+		font-size: 15px
+		line-height: 18px
+		color: #707070
+		+rl
+	&-link
+		margin-top: 25px
+		+clr
+		a
+			float: left
+			color: $green
+			font-size: 15px
+			+rl
+			border-bottom: 1px dotted $green
+			&:hover
+				border-bottom: 1px solid $n
+		.btn
+			font-size: 15px
+			text-transform: uppercase
+			color: $tc
+			float: right
+			width: 157px
+			height: 33px
+			background-color: #F5F5F5
+			border: 1px solid #d4d4d4
+			+rr
+			&:hover
+				background-color: #707070
+				color: #fff
+

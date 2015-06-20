@@ -58,6 +58,9 @@ $(document).ready(function() {
 			 $(".js-select").removeClass("is-active");
 				});
 
+		$(".js-del").bind("click", function(){
+        $(this).closest('.offspring').remove();
+    });
 
 });
 
@@ -109,32 +112,32 @@ $(document).ready(function() {
 						// }
 					},
 					messages: {
-						firstname: 'Вас так зовут?',
-						lastname: 'У вас такая фамилия?',
-						fathername: 'У вас такое отчество?',
+						firstname: '* Вас так зовут?',
+						lastname: '* У вас такая фамилия?',
+						fathername: '* У вас такое отчество?',
 						password: {
-							required: 'Введите пароль',
-							minlength: 'Минимум 5 символов'
+							required: '* Введите пароль',
+							minlength: '* Минимум 5 символов'
 						},
 						confirm_password: {
-							 required: 'Пароли не совпадают',
-							 minlength: 'Минимум 5 символов',
-							 equalTo: 'Пароли не совпадают'
+							 required: '* Пароли не совпадают',
+							 minlength: '* Минимум 5 символов',
+							 equalTo: '* Пароли не совпадают'
 						},
-						email: 'Неверный формат',
-						address: 'Это Ваш адрес?',
-						any: 'Заполните поле',
-						company: 'Заполните поле',
+						email: '* Неверный формат',
+						address: '* Это Ваш адрес?',
+						any: '* Заполните поле',
+						company: '* Заполните поле',
 						tel: {
 							required: '* Введите Ваш терефон',
-							minlength: 'Минимум 5 символов'
+							minlength: '* Минимум 5 символов'
 						},
 						username: {
 							required: '* Введите Ваше имя',
 							minlength: 'Минимум 2 символa'
 						},
 						message: {
-							required: 'Заполните поле',
+							required: '* Заполните поле',
 							minlength: 'Заполните поле',
 						},
 						text_area: {
