@@ -293,7 +293,6 @@ $('.js-select').click(function(event){
 	$(".js-carousel-preview .slick-slide").on("click",function (){
 	  $(this).parent().find(".slick-slide").removeClass("is-active");
 	  $(this).addClass("is-active")
-
 	  return false;
 	});
 
@@ -301,12 +300,7 @@ $('.js-select').click(function(event){
 // 	$(this).parents().find('.carousel__shadow-1').hide(1000)
 // });
 
-
-
 // tabs
-
-
-
 
     function tab() {
         $(".js-tab").each(function(){
