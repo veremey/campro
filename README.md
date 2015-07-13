@@ -17,6 +17,10 @@ GitHub: [https://github.com/veremey](https://github.com/veremey)
 myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRnAtXPieYcpJr0OF9VwT0)
 
 
+Странички для просмотра:
+
+[index.html](https://veremey.github.com/campro)
+
 [basket.html](https://veremey.github.com/campro/basket.html)
 
 [catalog.html](https://veremey.github.com/campro/catalog.html)
